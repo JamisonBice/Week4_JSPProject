@@ -23,10 +23,10 @@ p {
     form.celsiusTemp.focus();
     return false;
   }
-  var re = /^\d+(\.\d+)?$/;
+  var regEx = /^\d+(\.\d+)?$/;
 
   // validation fails if the input doesn't match our regular expression
-  if(!re.test(form.celsiusTemp.value)) {
+  if(!regEx.test(form.celsiusTemp.value)) {
     alert("Error: Input contains invalid characters!");
     form.celsiusTemp.focus();
     return false;

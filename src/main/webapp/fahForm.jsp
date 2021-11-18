@@ -23,10 +23,10 @@ p {
     form.fahrenheitTemp.focus();
     return false;
   }
-  var re = /^\d+(\.\d+)?$/;
+  var regEx = /^\d+(\.\d+)?$/;
 
   // validation fails if the input doesn't match our regular expression
-  if(!re.test(form.fahrenheitTemp.value)) {
+  if(!regEx.test(form.fahrenheitTemp.value)) {
     alert("Error: Input contains invalid characters!");
     form.fahrenheitTemp.focus();
     return false;
